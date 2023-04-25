@@ -1,4 +1,9 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+
 const pageTitle = "Index";
 ---
 
@@ -11,10 +16,13 @@ const pageTitle = "Index";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-<a href="/about/">About</a>        <a href="/blog/">Blog</a>
+		<Header />
 		<h1>{pageTitle}</h1>
 		<h2>It now runs with Netlify automation :)</h2>
 		<p>What an awesome piece of machinery.</p>
+		<Footer />
+		<script>
+		    import "../scripts/menu.js";
+		  </script>
 	</body>
 </html>
