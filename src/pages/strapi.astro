@@ -9,14 +9,12 @@ console.log(data);
 <BaseLayout pageTitle={pageTitle}>
     <ul>
         {data.map((post) => (
-    <>
     <img
         src={`http://127.0.0.1:1337${post.attributes.image.data.attributes.url}`}
         alt={post.attributes.image.data.attributes.name}
       />
-      <h2>{post.attributes.title}</h2>
-      <p>{post.attributes.summary}</p>
-    </>
-  ))}
+      <BlogPost url={`../posts/${post.attributes.slug}`} title={post.attributes.title}></BlogPost>
+      <p>{post.attributes.slug}</p>
+      ))}
     </ul>
   </BaseLayout>
