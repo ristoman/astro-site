@@ -3,13 +3,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About Me";
 
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
+  firstName: "Andrea",
+  country: "Barcelona",
+  occupation: "Experience Designer",
+  hobbies: ["gaming", "playing the guitar", "cooking"],
 };
 
-const skills = ["HTML", "CSS", "Research", "React", "Astro", "Writing Docs"];
+const skills = ["Product Strategy", "Idea Validation", "User Research", "Prototyping", "Lean Product Development"];
 
 const happy = true;
 const finished = true;
@@ -27,15 +27,15 @@ const textCase = "uppercase";
   <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
 
   <p>Here are a few facts about me:</p>
-<ul class="list-disc ml-8">
+<ul class="list-disc">
   <li>My name is {identity.firstName}.</li>
-  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+  <li>I live in {identity.country} and I work as an {identity.occupation}.</li>
   {identity.hobbies.length >= 2 && 
     <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
   } 
 </ul>
 <p>My skills are:</p>
-<ul class="list-disc ml-8">
+<ul class="list-disc">
   {skills.map((skill) => <li class="skill">{skill}</li>)}
 </ul>
 
