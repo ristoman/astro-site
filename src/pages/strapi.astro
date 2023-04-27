@@ -4,7 +4,6 @@ import BlogPost from '../components/BlogPost.astro';
 const pageTitle = "Content from Strapi CMS";
 const response = await fetch("http://127.0.0.1:1337/api/posts?populate=*");
 const { data } = await response.json();
-console.log(data);
 ---
 <BaseLayout pageTitle={pageTitle}>
     <ul>
