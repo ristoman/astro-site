@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CSS from './BaseLayout.module.scss';
 // import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
@@ -12,7 +13,7 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body class="p-16 bg-slate-100 prose prose-lg">
+  <body class={`${CSS.body} p-16 bg-slate-100 prose prose-lg`}>
     <Header />
     <h1 class="border-b-2 border-teal-100 font-serif text-4xl pt-2 mt-8 pb-2 mb-8">{pageTitle}</h1>
     <slot />
