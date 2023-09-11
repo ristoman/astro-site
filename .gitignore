@@ -3,6 +3,11 @@ dist/
 # generated types
 .astro/
 
+# strapi related stuff
+src/pages/graphql/
+src/pages/strapi.astro
+src/pages/typicode.astro
+
 # dependencies
 node_modules/
 
