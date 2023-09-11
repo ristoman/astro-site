@@ -1,7 +1,25 @@
+@import "../styles/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Enriqueta&family=Gasoek+One&display=swap');
+
 .body{
+    border-color: $caribbean-current;
     min-width: 54em;
     margin: 0 auto;
+    font-family: 'Enriqueta', serif;
     p{
-        color: black;
+        color: $night;
     }
+    a{
+        color: $caribbean-current;
+    }
+}
+
+h1.pageTitle{
+    margin-bottom:1rem;
+    font-family:'Gasoek One', sans-serif;
+    text-transform: uppercase;
+}
+
+h2{
+    margin:0;
 }

@@ -4,44 +4,32 @@ const pageTitle = "About Me";
 
 const identity = {
   firstName: "Andrea",
-  country: "Barcelona",
-  occupation: "Experience Designer",
-  hobbies: ["gaming", "playing the guitar", "cooking"],
+  country: "downtown Barcelona, Spain",
+  occupation: "Lead Experience Designer",
+  company: "Thoughtworks",
+  hobbies: ["playing the guitar", "cooking"],
 };
 
 const skills = ["Product Strategy", "Idea Validation", "User Research", "Prototyping", "Lean Product Development"];
 
-const happy = true;
-const finished = true;
-const goal = 3;
-
-const skillColor = "crimson";
-const textWeight = "bold";
-const textCase = "uppercase";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>... and my new Astro site!</h2>
-
-  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
-
-  <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+  <p>My journey in the world of design began when it was all about print posters, annual reports and brand booklets. Over the past two decades, I've honed my expertise across a spectrum of disciplines that include Graphic Design, Lean UX and Product Strategy. I'm your versatile designer who effortlessly transitions from Excel to Figma to Analytics, all in a single day.</p>
+  <p>My design formation has been academic, but my love for computers and coding started way earlier. My first HTML class happened as an afterschool program when I was about 14, at a time where we were taught to write entire pages in Notepad, without the help of CSS. Parallel to this, making computers do weird things has always been a hobby of mine, as me and my friends messed around with languages like Pascal, QBasic and even programming TI-92 calculators (Where I created an app that would let two people chat with their calculators if connected with a network cable... The need for distractions in high school was strong).
+  <p>Today, I am a strong advocate for a user-centric, data-driven approach. I marry intuition with hard data to test, validate, and quantify the impact of innovative product ideas. In the battle of opinions versus data, the latter prevails, especially in the kind of uncharted territories complex organizations tend to navigate.</p>
+  <p>I find myself at home inside organizations that cherish empathy, learning, and inclusivity. I'm friendly, upbeat, approachable and love to explore long-term visions in a way that give a company direction in the now. The most high-performing product teams are those that foster knowledge sharing, cultivate curiosity, and embrace open-mindedness to delve deep into understanding the software they're entrusted with.</p>
+  <p>If your company values these principles and seeks a passionate designer, head of product or CPO, let's connect and embark on a journey of excellence together!</p>
 
   <p>Here are a few facts about me:</p>
 <ul class="list-disc">
-  <li>My name is {identity.firstName}.</li>
-  <li>I live in {identity.country} and I work as an {identity.occupation}.</li>
+  <li>I live in {identity.country} where I work as {identity.occupation} at {identity.company}.</li>
+  <li>I am happily married and have a baby daughter, Lucia.</li>
   {identity.hobbies.length >= 2 && 
-    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}.</li>
   } 
 </ul>
 <p>My skills are:</p>
 <ul class="list-disc">
   {skills.map((skill) => <li class="skill">{skill}</li>)}
 </ul>
-
-{happy && <p>I am happy to be learning Astro!</p>}
-
-{finished && <p>I finished this tutorial!</p>}
-
-{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </BaseLayout>

@@ -1,0 +1,11 @@
+---
+const {url, title, description, image} = Astro.props;
+import CSS from './Project.module.scss';
+---
+<a href={url}>
+    <article class={CSS.project}>
+        <img class={CSS.projectIcon} src={image} alt="">
+        <h2>{title}</h2>
+        <h3>{description}</h3>
+    </article>
+</a>

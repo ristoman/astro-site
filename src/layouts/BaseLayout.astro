@@ -9,13 +9,14 @@ const { pageTitle } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title>{pageTitle} - Andrea Ristori</title>
   </head>
-  <body class={`${CSS.body} p-16 bg-slate-100 prose prose-lg`}>
+  <body class={`${CSS.body} pt-8 prose prose-lg`}>
     <Header />
-    <h1 class="border-b-2 border-teal-100 font-serif text-4xl pt-2 mt-8 pb-2 mb-8">{pageTitle}</h1>
+    <h1 class={`${CSS.pageTitle} text-8xl pt-2 pb-2`}>{pageTitle}</h1>
     <slot />
     <Footer />
     <script>
