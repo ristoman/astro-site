@@ -2,7 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CSS from './BaseLayout.module.scss';
-// import '../styles/global.css';
+import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
 <html lang="en">
@@ -14,9 +14,9 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle} - Andrea Ristori</title>
   </head>
-  <body class={`${CSS.body} pt-8 prose prose-lg`}>
+  <body class={`${CSS.body} bg-slate-50 dark:bg-slate-700 text-black dark:text-white prose prose-lg my-8`}>
     <Header />
-    <h1 class={`${CSS.pageTitle} text-8xl pt-2 pb-2`}>{pageTitle}</h1>
+    <h1 class={`${CSS.pageTitle} text-slate-700 dark:text-white text-8xl py-2`}>{pageTitle}</h1>
     <slot />
     <Footer />
     <script>

@@ -4,24 +4,34 @@ import Greeting from '../components/Greeting.jsx';
 const pageTitle = "Hello World!";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My name is Andrea Ristori and I'm currently a Lead Experience Designer at <a href="https://thoughtworks.com">Thoughtworks</a>.</h2>
-  <h3>My work philosophy</h3>
-  <p>As a designer, I want to give the entire team understanding of the problems we're trying to solve in a way that balances user needs, business goals and tech capabilities.  Nothing brings me as much joy as removing ambiguity and shaping clear, actionable strategies for the entire team to follow. I relentlessly break down gigantic projects into small Lean chunks to continuosly deliver valuable features and continuously celebrate tangible improvements. I also have experience teaching Agile methodologies and mentoring junior designers, both individually and as a group.</p>
-  <h3>My work experience</h3>
-  <ul>
-    <li>2017-Now: Senior / Lead Experience Designer @ <a href="https://thoughtworks.com">Thoughtworks</a></li>
-    <li>2016-2017: Lead Designer @ <a href="https://www.metropublisher.com/">MetroPublisher</a></li>
-    <li>2014-2016: Freelance UX Designer</li>
-    <li>2012-2014: UX Designer @ <a href="https://en.wikipedia.org/wiki/Upptalk">Upptalk</a> (RIP <i class="ri-cross-fill"></i>)</li>
-    <li>2011-2012: Graphic Designer @ Anoop Systems</li>
-    <li>2007-2008: Graphic Designer @ McRoberts Mitchell</li>
-  </ul>
-  <p><a href="/work/">Read More <i class="ri-arrow-right-line"></i></a></p>
-    <!-- <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari", "Ciao", "Salut"]} /> -->
-  <h3>My story</h3>
-  <p>I was born in Italy, where I was raised until the early 2000s. I moved to Madison, Wisconsin for my college years (go Badgers!) and ultimately settled in Barcelona at the beginning of 2008. I'm happily married and have a baby daughter, Lucia. In my spare time I play guitar, love reading a mind-bending book (sci-fi, horror, thrillers and the like), have a passion for good coffee, strategy videogames and karaoke. Lately I've been taking an interest in generative AI, particularly Stable Diffusion and creative coding with Processing and P5.js</p>
-  <p><a href="/about/">Read More <i class="ri-arrow-right-line"></i></a></p>
-  <h3>This place</h3>
-  <p>This is where I gather my projects and thoughts, while experimenting with all sorts of pipelines. My current tech stack includes handcoding for <a target="_blank" href="https://astro.build">Astro CMS</a>, <a target="_blank" href="https://tailwindcss.com/">Tailwind CSS</a> and using continuous automated deployment with <a target="_blank" href="https://netlify.com">Netlify</a>. Things might break from time to time and that's ok :)</p>
-  <!-- <p>This page is connected to Netlify for automated deployment. Sweet!</p> -->
+  <!-- <Greeting client:load messages={["Hej", "Hello", "Hola", "Habari", "Ciao", "Salut", "Servus", "Ola"]} /> -->
+  <section id="name" class="">
+    <h2 class=" text-slate-700 dark:text-white p-0 m-0">My name is Andrea Ristori and I'm currently a Lead Experience Designer at <a class="text-indigo-900 dark:text-indigo-100" href="https://thoughtworks.com">Thoughtworks</a>.</h2>
+  </section>
+  <section id="work" class="bg-white dark:bg-slate-800 p-4 my-4 rounded border border-slate-200 dark:border-slate-900 shadow-lg dark:shadow-slate-800">
+    <h3 class=" text-slate-700 dark:text-white p-0 m-0">My work philosophy</h3>
+    <p>As a designer, I want to give the entire team understanding of the problems we're trying to solve in a way that balances user needs, business goals and tech capabilities. Nothing brings me as much joy as turning ambiguous expectations into clear, actionable strategies for the entire team to follow. I relentlessly break down gigantic projects into small, Lean chunks of value that generate continuous tangible improvements. I also have experience teaching Agile methodologies and mentoring junior designers, both individually and as a group.</p>
+    <h3 class=" text-slate-700 dark:text-white p-0 m-0">My work experience</h3>
+    <ul>
+      <li>2017-Now: Senior / Lead Experience Designer @ <a class="text-indigo-900 dark:text-indigo-100" href="https://thoughtworks.com">Thoughtworks</a></li>
+      <li>2016-2017: Lead Designer @ <a class="text-indigo-900 dark:text-indigo-100"  href="https://www.metropublisher.com/">MetroPublisher</a></li>
+      <li>2014-2016: Freelance UX Designer</li>
+      <li>2012-2014: UX Designer @ <a class="text-indigo-900 dark:text-indigo-100"  href="https://en.wikipedia.org/wiki/Upptalk">Upptalk</a> (RIP <i class="ri-cross-fill"></i>)</li>
+      <li>2011-2012: Graphic Designer @ Anoop Systems</li>
+      <li>2007-2008: Graphic Designer @ McRoberts Mitchell</li>
+    </ul>
+    <p><a class="text-indigo-900 dark:text-indigo-100"  href="/work/">Read More <i class="ri-arrow-right-line"></i></a></p>
+  </section>
+  <section id="story" class="bg-white dark:bg-slate-800 p-4 my-4 rounded border border-slate-200 dark:border-slate-900 shadow-lg dark:shadow-slate-800">
+    <h3 class=" text-slate-700 dark:text-white p-0 m-0">My story</h3>
+    <p>I was born in Italy, where I was raised until the early 2000s. I moved to Madison, Wisconsin for my college years (go Badgers!) and ultimately settled in Barcelona at the beginning of 2008. </p>
+    <p>I'm happily married and have a baby daughter, Lucia. In my spare time I play guitar, love reading a mind-bending book (sci-fi, horror, thrillers and the like), have a passion for good coffee, strategy videogames and karaoke.</p>
+    <p>Lately I've been taking an interest in generative AI, particularly Stable Diffusion and creative coding with Processing and P5.js</p>
+    <p><a class="text-indigo-900 dark:text-indigo-100"  href="/about/">Read More <i class="ri-arrow-right-line"></i></a></p>
+  </section>
+  <section id="site" class="bg-white dark:bg-slate-800 p-4 my-4 rounded border border-slate-200 dark:border-slate-900 shadow-lg dark:shadow-slate-800">  
+    <h3 class=" text-slate-700 dark:text-white p-0 m-0">This place</h3>
+    <p>This is where I gather my projects and thoughts, while experimenting with all sorts of pipelines. My current tech stack includes handcoding for <a class="text-indigo-900 dark:text-indigo-100"  target="_blank" href="https://astro.build">Astro CMS</a>, <a class="text-indigo-900 dark:text-indigo-100"  target="_blank" href="https://tailwindcss.com/">Tailwind CSS</a> and using continuous automated deployment with <a class="text-indigo-900 dark:text-indigo-100"  target="_blank" href="https://netlify.com">Netlify</a>. Things might break from time to time and that's ok :)</p>
+  </section>
+    <!-- <p>This page is connected to Netlify for automated deployment. Sweet!</p> -->
 </BaseLayout>

@@ -1,4 +1,6 @@
-html {
+@tailwind base;
+
+/* html {
     background-color: #f1f5f9;
     font-family: sans-serif;
   }
@@ -23,10 +25,10 @@ html {
   .pageTitle{
     font-family: Anton, sans-serif;
     text-transform: uppercase;
-}
+} */
   /* nav styles */
 
-.hamburger {
+/* .hamburger {
   padding-right: 20px;
   cursor: pointer;
 }
@@ -93,4 +95,4 @@ html.dark {
 
 .dark .nav-links a {
   color: #fff;
-}
+} */
